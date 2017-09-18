@@ -32,7 +32,7 @@ class tasksController extends Controller
      */
     public function create()
     {
-        task = new task;
+        $task = new task;
 
         return view('tasks.create', [
             'task' => $task,
@@ -47,7 +47,7 @@ class tasksController extends Controller
      */
     public function store(Request $request)
     {
-        task = new task;
+        $task = new task;
         $task->content = $request->content;
         $task->save();
 

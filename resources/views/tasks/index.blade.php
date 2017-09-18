@@ -12,4 +12,6 @@
         </ul>
     @endif
 
+    {!! link_to_route('tasks.create', 'タスクを新規登録する') !!}
+
 @endsection
